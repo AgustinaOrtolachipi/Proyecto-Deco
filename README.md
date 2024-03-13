@@ -1,1 +1,1 @@
-# Mi Proyecto
+LANDING PAGE - Proyecto grupal
