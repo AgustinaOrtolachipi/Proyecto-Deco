@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Registro de Usuarios</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>Formulario de Registro e Inicio de Sesión</title>
 </head>
 <body>
+
+
     <div class="container-form register">
         <div class="information">
             <div class="info-childs">
@@ -20,25 +23,32 @@
             </div>
         </div>
         <div class="form-information">
-            <div class="form-information-childs">
-                <h2>Crear una Cuenta</h2>
-            </div>
-            <form class="form" id="registerForm">
-                <label >
-                    <i class='bx bx-user'></i>
-                    <input type="text" id="registerFullName" placeholder="Nombre Completo" required>
-                </label>
-                <label >
-                    <i class='bx bx-envelope' ></i>
-                    <input type="email" id="registerEmail" placeholder="Correo Electronico" required>
-                </label>
-                <label >
-                    <i class='bx bx-lock-alt' ></i>
-                    <input type="password" id="registerPassword" placeholder="Contraseña" required>
-                </label>
-                <input type="submit" value="Registrarse">
-            </form>
+            <div id="registro" class="hidden">
+                <div class="form-information-childs">
+                    <h2>Crear una Cuenta</h2>
+                </div>
+                <form id="registroForm" class="form">
+
+                    <label for="nombreRegistro">
+                        <i class='bx bx-user'></i>
+                        <input type="text" id="nombreRegistro" placeholder="Nombre" required>
+                    </label>
+                    
+                    <label for="emailRegistro">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" id="emailRegistro" placeholder="Email" required>
+                    </label>
+                    
+                    <label for="contrasenaRegistro">
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" id="contrasenaRegistro" placeholder="Contraseña" required>
+                    </label>
+
+                    <button type="submit">Registrarse</button>
+                </form>
         </div>
+    </div>
+        
     </div>
 
     <div class="container-form login hide">
@@ -49,25 +59,33 @@
                 <input type="button" value="Registrarse" id="sign-up">
             </div>
         </div>
+        
         <div class="form-information">
-            <div class="form-information-childs">
-                <h2>Iniciar Sesion</h2>
+            <div id="inicioSesion" class="hidden">
+                <div class="form-information-childs">
+                    <h2>Crear una Cuenta</h2>
+                </div>
+                <form id="inicioSesionForm" class="form">
+                    <label for="emailInicio">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" id="emailInicio" placeholder="Email" required>
+                    </label>
+                    
+                    <label for="contrasenaInicio">
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" id="contrasenaInicio" placeholder="Contraseña" required>
+                    </label>
+                    
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
             </div>
-            <form class="form" id="loginForm">
-                <label >
-                    <i class='bx bx-envelope' ></i>
-                    <input type="email" id="loginEmail" placeholder="Correo Electronico" required>
-                </label>
-                <label >
-                    <i class='bx bx-lock-alt' ></i>
-                    <input type="password" id="loginPassword" placeholder="Contraseña" required>
-                </label>
-                <input type="submit" value="Iniciar Sesion">
-            </form>
         </div>
-    </div>
+        
+    </div>    
 
-    <script src="form.js"></script>
-    <script src="usersData.js"></script>
+<div id="mensaje"></div>
+
+<script src="form.js"></script>
+
 </body>
 </html>
