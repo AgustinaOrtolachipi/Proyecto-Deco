@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DecoHouse</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="contenido"></div>
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById('contenido').innerHTML = html;
+    });
+</script>
     <section class="banner">
         <img src="./static/banner.jfiff">
     </section>
     <section class="container">
+        <span class="works-title">
+            Nuestros trabajos
+        </span>
         <div class="slider-wrapper">
             <div class="slider">
                 <img id="slide-1" src="./static/deco-1.jpg" alt="slider deco img">
@@ -29,9 +41,7 @@
                 <a href="#slide-6"></a>
             </div>
         </div>
-        <span class="works-title">
-            Nuestros trabajos
-        </span>
+        
     </section>
 </body>
 </html>
