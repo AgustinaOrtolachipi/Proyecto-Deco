@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault();
       const email = document.getElementById('emailInicio').value;
       mensajeDiv.textContent = `¡Bienvenido nuevamente al inicio de sesión, ${email}!`;
-      inicioSesionDiv.classList.add('hidden');
+      inicioSesionDiv.classList.add("hidden");
       mensajeDiv.classList.remove('hidden');
     });
   });
