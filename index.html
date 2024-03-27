@@ -11,27 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Contenido dinámico del navbar -->
-    <div id="navbar-container"></div>
-    <!-- Sección del banner -->
     <section class="banner">
         <!-- Corregimos la extensión de la imagen -->
         <img src="./static/banner.jpg" alt="Banner">
     </section>
-    <!-- Sección del contenido principal -->
-    <section class="container">
-        <!-- Título de los trabajos -->
-        <span class="works-title">Nuestros trabajos</span>
-        <!-- Slider de imágenes -->
-        <div class="slider-wrapper">
-            <div class="slider">
-                <!-- Imágenes del slider -->
-                <img id="slide-1" src="./static/deco-1.jpg" alt="Slider deco img">
-                <img id="slide-2" src="./static/deco-2.jpg" alt="Slider deco img">
-                <img id="slide-3" src="./static/deco-3.jpg" alt="Slider deco img">
-                <img id="slide-4" src="./static/deco-4.jpg" alt="Slider deco img">
-                <img id="slide-5" src="./static/deco-5.jpg" alt="Slider deco img">
-                <img id="slide-6" src="./static/deco-6.jpg" alt="Slider deco img">
+
             </div>
             <!-- Navegación del slider -->
             <div class="slider-nav">
@@ -43,36 +27,6 @@
                 <a href="#slide-6"></a>
             </div>
         </div>
-    </section>
-    <!-- Contenido dinámico de los testimonios -->
-    <div id="testimonios-container"></div>
-    <!-- Contenido dinámico del formulario -->
-    <div id="form-container"></div>
-    <!-- Scripts JS -->
-    <script src="form.js"></script>
-    <script src="testimonios.js"></script>
-    <script src="func.js"></script>
-    <script src="menu.js"></script>
-    <!-- Script para cargar la barra de navegación, el formulario y los testimonios -->
-    <script>
-        // Carga el contenido del navbar
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('navbar-container').innerHTML = html;
-            });
-        // Carga el contenido del formulario
-        fetch('form.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('form-container').innerHTML = html;
-            });
-        // Carga el contenido de los testimonios
-        fetch('Testimonios/testimonios.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('testimonios-container').innerHTML = html;
-            });
-    </script>
+
 </body>
 </html>
