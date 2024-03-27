@@ -13,72 +13,72 @@
 </head>
 <body>
 
-<div class="container-form register">
-    <div class="information">
-        <div class="info-childs">
-            <h2>¡Bienvenido!</h2>
-            <p>Para unirte a nuestra comunidad por favor Inicia Sesion con tus datos</p>
-            <input type="button" value="Iniciar Sesion" id="sign-in">
-        </div>
-    </div>
-    <div class="form-information">
-        <div id="registro" class="hidden">
-            <div class="form-information-childs">
-                <h2>Crear una Cuenta</h2>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡Bienvenido!</h2>
+                <p>Para unirte a nuestra comunidad por favor Inicia Sesion con tus datos</p>
+                <input type="button" value="Iniciar Sesion" id="sign-in">
             </div>
-            <form id="registroForm" class="form">
-
-                <label for="nombreRegistro">
-                    <i class='bx bx-user'></i>
-                    <input type="text" id="nombreRegistro" placeholder="Nombre" required>
-                </label>
-                
-                <label for="emailRegistro">
-                    <i class='bx bx-envelope' ></i>
-                    <input type="email" id="emailRegistro" placeholder="Email" required>
-                </label>
-                
-                <label for="contrasenaRegistro">
-                    <i class='bx bx-lock-alt' ></i>
-                    <input type="password" id="contrasenaRegistro" placeholder="Contraseña" required>
-                </label>
-
-                <button type="submit">Registrarse</button>
-            </form>
         </div>
-    </div>
-</div>
+        <div class="form-information">
+            <div id="registro" class="hidden">
+                <div class="form-information-childs">
+                    <h2>Crear una Cuenta</h2>
+                </div>
+                <form id="registroForm" class="form">
 
-<div class="container-form login hide">
-    <div class="information">
-        <div class="info-childs">
-            <h2>Regristrase Aqui</h2>
-            <p>Si no dispone de una cuenta puede registrarse aqui.</p>
-            <input type="button" value="Registrarse" id="sign-up">
-        </div>
-    </div>
-    
-    <div class="form-information">
-        <div id="inicioSesion" class="hidden">
-            <div class="form-information-childs">
-                <h2>Crear una Cuenta</h2>
+                    <label for="nombreRegistro">
+                        <i class='bx bx-user'></i>
+                        <input type="text" id="nombreRegistro" placeholder="Nombre" required>
+                    </label>
+                    
+                    <label for="emailRegistro">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" id="emailRegistro" placeholder="Email" required>
+                    </label>
+                    
+                    <label for="contrasenaRegistro">
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" id="contrasenaRegistro" placeholder="Contraseña" required>
+                    </label>
+
+                    <button type="submit">Registrarse</button>
+                </form>
             </div>
-            <form id="inicioSesionForm" class="form">
-                <label for="emailInicio">
-                    <i class='bx bx-envelope' ></i>
-                    <input type="email" id="emailInicio" placeholder="Email" required>
-                </label>
-                
-                <label for="contrasenaInicio">
-                    <i class='bx bx-lock-alt' ></i>
-                    <input type="password" id="contrasenaInicio" placeholder="Contraseña" required>
-                </label>
-                
-                <button type="submit">Iniciar Sesión</button>
-            </form>
         </div>
     </div>
-</div>
+
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>Regristrase Aqui</h2>
+                <p>Si no dispone de una cuenta puede registrarse aqui.</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        
+        <div class="form-information">
+            <div id="inicioSesion" class="hidden">
+                <div class="form-information-childs">
+                    <h2>Crear una Cuenta</h2>
+                </div>
+                <form id="inicioSesionForm" class="form">
+                    <label for="emailInicio">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" id="emailInicio" placeholder="Email" required>
+                    </label>
+                    
+                    <label for="contrasenaInicio">
+                        <i class='bx bx-lock-alt' ></i>
+                        <input type="password" id="contrasenaInicio" placeholder="Contraseña" required>
+                    </label>
+                    
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 <!-- <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,31 +87,32 @@
 </head>
 <body>
 
-<h2>Registro e Inicio de Sesión</h2>
+    <h2>Registro e Inicio de Sesión</h2>
 
-<div id="registro" class="hidden">
-  <h3>Registro</h3>
-  <form id="registroForm">
-    <label for="nombreRegistro">Nombre:</label><br>
-    <input type="text" id="nombreRegistro" required><br>
-    <label for="emailRegistro">Email:</label><br>
-    <input type="email" id="emailRegistro" required><br>
-    <label for="contrasenaRegistro">Contraseña:</label><br>
-    <input type="password" id="contrasenaRegistro" required><br>
-    <button type="submit">Registrarse</button>
-  </form>
-</div>
+    <div id="registro" class="hidden">
+    <h3>Registro</h3>
+    <form id="registroForm">
+        <label for="nombreRegistro">Nombre:</label><br>
+        <input type="text" id="nombreRegistro" required><br>
+        <label for="emailRegistro">Email:</label><br>
+        <input type="email" id="emailRegistro" required><br>
+        <label for="contrasenaRegistro">Contraseña:</label><br>
+        <input type="password" id="contrasenaRegistro" required><br>
+        <button type="submit">Registrarse</button>
+    </form>
+    </div>
 
-<div id="inicioSesion" class="hidden">
-  <h3>Iniciar Sesión</h3>
-  <form id="inicioSesionForm">
-    <label for="emailInicio">Email:</label><br>
-    <input type="email" id="emailInicio" required><br>
-    <label for="contrasenaInicio">Contraseña:</label><br>
-    <input type="password" id="contrasenaInicio" required><br>
-    <button type="submit">Iniciar Sesión</button>
-  </form>
-</div> -->
+    <div id="inicioSesion" class="hidden">
+    <h3>Iniciar Sesión</h3>
+    <form id="inicioSesionForm">
+        <label for="emailInicio">Email:</label><br>
+        <input type="email" id="emailInicio" required><br>
+        <label for="contrasenaInicio">Contraseña:</label><br>
+        <input type="password" id="contrasenaInicio" required><br>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+    </div> -->
+
   <div id="mensaje"></div>
   <script src="form.js"></script>
 </body>

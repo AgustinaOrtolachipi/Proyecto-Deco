@@ -1,13 +1,13 @@
-*{
+* {
     margin: 0;
     scrollbar-width: none;
 }
 
-body{
+body {
     background-color: #f3bd502b;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.container { 
+.container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -17,15 +17,13 @@ body{
     top: 70% ;
     padding: 2rem;
 }
-
-.slider-wrapper{
+.slider-wrapper {
     max-width: 40rem;
     height: 100%;
     position: relative;
     margin: 0 auto;
-    
 }
-.slider{
+.slider {
     display: flex;
     aspect-ratio: 16 / 9;
     overflow-x: scroll;
@@ -34,16 +32,17 @@ body{
     scroll-behavior: smooth;
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    margin: auto;
+    z-index: 1;
 }
 
-.slider img{
+.slider img {
     flex: 1 0 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     scroll-snap-align: start;
 }
-
-.slider-nav{
+.slider-nav {
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -52,8 +51,7 @@ body{
     transform: translateX(-50%);
     z-index: 1;
 }
-
-.slider-nav a{
+.slider-nav a {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
@@ -61,12 +59,10 @@ body{
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
-
-.slider-nav a:hover{
+.slider-nav a:hover {
     opacity: 1;
 }
-
-.banner{
+.banner {
     width: 100%;
     height: 600px;
     overflow: hidden;
@@ -76,8 +72,7 @@ body{
     opacity: 0.9;
     z-index: -1;
 }
-
-.banner img{
+.banner img {
     position: relative;
     height: 100%;
     width: 100%;
@@ -86,8 +81,7 @@ body{
     z-index: 0;
     opacity: .9;
 }
-
-.works-title{
+.works-title {
     font-size: x-large;
     font-weight: bold;
     text-transform: uppercase;
