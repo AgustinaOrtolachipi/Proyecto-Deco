@@ -35,4 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
       inicioSesionDiv.classList.add('hidden');
       mensajeDiv.classList.remove('hidden');
     });
-
+  });
