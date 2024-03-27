@@ -1,3 +1,18 @@
+const btnSignIn = document.getElementById("sign-in");
+const btnSignUp = document.getElementById("sign-up");
+const formRegister = document.querySelector(".register");
+const formLogin = document.querySelector(".login");
+
+btnSignIn.addEventListener("click", e => {
+    formRegister.classList.add("hide");
+    formLogin.classList.remove("hide");
+});      
+
+btnSignUp.addEventListener("click", e => {
+    formLogin.classList.add("hide");
+    formRegister.classList.remove("hide");
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const registroForm = document.getElementById('registroForm');
     const inicioSesionForm = document.getElementById('inicioSesionForm');
@@ -20,5 +35,4 @@ document.addEventListener('DOMContentLoaded', function() {
       inicioSesionDiv.classList.add('hidden');
       mensajeDiv.classList.remove('hidden');
     });
-  });
-  
+

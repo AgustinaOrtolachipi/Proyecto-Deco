@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Testimonios de Decoración</title>
+    <link rel="stylesheet" href="testimonios.css">
+</head>
+<body>
+  <div id="testimonios-container">
+    <!-- Testimonios existentes -->
+    <div class="testimonio">
+      <div class="testimonio-texto">
+        <p>"¡Increíble trabajo! La atención al detalle en cada rincón de mi casa realmente hizo que cobrara vida. Gracias por convertir mi visión en realidad."</p>
+        <p class="testimonio-autor">- María Sánchez</p>
+      </div>
+    </div>
+    <div class="testimonio">
+      <div class="testimonio-texto">
+        <p>"Estoy encantada con el resultado. La combinación de colores y texturas es perfecta. Sin duda volveré a confiar en su talento para futuros proyectos."</p>
+        <p class="testimonio-autor">- Juan Pérez</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="review-form-container">
+    <form id="review-form" class="container-form">
+      <textarea id="review-text" rows="4" cols="50" placeholder="Escribe tu reseña aquí" class="review-input"></textarea>
+      <br>
+      <button type="submit" onclick="submitReview()">Enviar reseña</button>
+    </form>
+  </div>
+
+  <script src="testimonios.js"></script>
+</body>
+</html>

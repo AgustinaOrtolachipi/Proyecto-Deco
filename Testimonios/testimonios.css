@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonio {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+}
+
+.testimonio-texto {
+  color: #80460c;
+  font-size: 18px;
+}
+
+.testimonio-autor {
+  color: #80460c;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.review-input {
+  width: calc(90% - 20px);
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid #80460c;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.review-input:focus {
+  outline: none;
+  border-color: #954b00;
+}
+  
+.dejar-reseña {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-reseña {
+  background-color: #80460c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-reseña i {
+  margin-left: 5px;
+}
+
+.btn-reseña:hover {
+  background-color: #80460c;
+}
+
+
+#review-form button[type="submit"] {
+  background-color: #5c330a;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, -1);
+  margin: 20px;
+}
+
+#review-form button[type="submit"]:hover {
+    background-color: #80460c;
+}
+
