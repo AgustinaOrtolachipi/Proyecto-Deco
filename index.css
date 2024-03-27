@@ -9,8 +9,10 @@ body{
 }
 .container { 
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: start;
     gap: 2rem;
     position: absolute;
     left: 0;
@@ -92,3 +94,243 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
+
+.container-form {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, -1);
+    height: 23rem;
+    max-width: 600px;
+    transition: all 1s ease;
+    padding-top: 20px;
+    margin: 10px;
+    margin-left: 6rem;
+}
+
+.information {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #5c330a;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-childs {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-childs h2{
+    font-size: 2.5 rem;
+    color: #f5f5dc;
+}
+
+.info-childs p {
+    margin: 15px 0;
+    color: #fffdfd;
+}
+
+.info-childs input {
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #f5f5dc;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-childs input:hover {
+    background-color: #f5f5dc;
+    border: none;
+    color: #000000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, -1);
+}
+
+.form-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #f5f5dc;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-information-childs {
+    padding: 0 30px;
+}
+
+.form-information-childs p {
+    color: #555;
+}
+
+.form {
+    margin: 30px 0 0 0;
+}
+
+.form label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, -1);
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #333;
+}
+
+.form button[type="submit"] {
+    background-color: #5c330a;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, -1);
+}
+
+.form button[type="submit"]:hover {
+    background-color: #80460c;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-300%);
+}
+
+@media screen and (max-width:750px) {
+    html {
+        font-size: 12px;
+    } 
+}
+
+@media screen and (max-width:580px) {
+    html {
+        font-size: 10px;
+    } 
+
+    .container-form {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .information {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .form-information {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+    }
+}
+
+.testimonios-container{
+    width: 600px;
+    height: 400px;
+}
+
+.testimonio {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    height: 110px;
+  }
+  
+  .testimonio-texto {
+    color: #80460c;
+    font-size: 18px;
+  }
+  
+  .testimonio-autor {
+    color: #80460c;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  .review-input {
+    width: 25rem;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #80460c;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .review-input:focus {
+    outline: none;
+    border-color: #954b00;
+  }
+    
+  .dejar-reseña {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .btn-reseña {
+    background-color: #80460c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-reseña i {
+    margin-left: 5px;
+  }
+  
+  .btn-reseña:hover {
+    background-color: #80460c;
+  }
+  
+  #review-form{
+    width: 100%;
+  }
+  
+  #review-form button[type="submit"] {
+    background-color: #5c330a;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, -1);
+    margin-left: 20px;
+  }
+  
+  #review-form button[type="submit"]:hover {
+      background-color: #80460c;
+  }
+  
+  #mensaje {
+    font-size: 14px;
+    padding-top: 1rem;
+    font-weight: 600;
+  }
+  
