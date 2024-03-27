@@ -5,6 +5,7 @@
 }
 
 body {
+    background-image: url(/Formulario/img/form.jpg) ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,4 +150,9 @@ body {
         border-bottom-left-radius: 20px;
         border-top-right-radius: 0px;
     }
+}
+
+#mensaje {
+    background-color: #555;
+    color:#fff;
 }
