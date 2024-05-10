@@ -1,0 +1,8 @@
+// src/custom-bootstrap.scss
+
+// Sobrescribe las variables de Bootstrap aquí, por ejemplo:
+$body-bg: #f8f9fa;
+$primary: #007bff;
+
+// Importa el archivo CSS de Bootstrap para que se apliquen las personalizaciones
+@import '~bootstrap/scss/bootstrap';

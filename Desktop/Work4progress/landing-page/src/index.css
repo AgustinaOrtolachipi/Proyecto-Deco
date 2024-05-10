@@ -1,0 +1,25 @@
+/* src/styles.css */
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado */
+h1 {
+  color: #333;
+}
+
+/* Estilos para el formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
